@@ -8,6 +8,22 @@ This mobile game application, developed for the CSE535 course, offers an engagin
 ## Demo
 [![Demo Video of the AI based Tic Tac Toe Game](https://img.youtube.com/vi/39cvCMhZ-JE/0.jpg)](https://www.youtube.com/watch?v=39cvCMhZ-JE)
 
+## Mobile App Screens
+<p align="center">
+<kbd><img src="https://github.com/user-attachments/assets/6d73315b-cbc3-4af8-bb2e-4c255f444f92" width="200"></kbd> &nbsp;
+<kbd><img src="https://github.com/user-attachments/assets/00fffd76-d47c-4855-931d-6240cbaf3490" width="200"></kbd> &nbsp;
+<kbd><img src="https://github.com/user-attachments/assets/b83a4fbe-9c0d-4897-aeed-2398dfa4e7f5" width="200"></kbd> &nbsp;
+</p>
+<p align="center">
+<kbd><img src="https://github.com/user-attachments/assets/53c16326-aa50-41f7-a230-cdddea8dddad" width="200"></kbd> &nbsp;
+<kbd><img src="https://github.com/user-attachments/assets/8c5992bb-14db-4228-89c9-e76cd1bc8a22" width="200"></kbd> &nbsp;
+<kbd><img src="https://github.com/user-attachments/assets/61fbe6ed-e912-46e0-a2fe-674ec3abe815" width="200"></kbd> &nbsp;
+</p>
+
+
+
+
+
 ## MinMax Algorithm
 The core development of the game, specifically the gameplay, is implemented using the MinMax Algorithm with Alpha-Beta Pruning to optimize the AI's moves against the human player. Additionally, various difficulty modes are introduced:
 
