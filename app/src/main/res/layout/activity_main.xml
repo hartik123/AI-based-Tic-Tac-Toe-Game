@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Centering the grid layout and limiting the size -->
+    <LinearLayout
+        android:id="@+id/mode_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/single_player"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="11sp"
+            android:text="Single" />
+
+        <Button
+            android:id="@+id/two_player_local"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="11sp"
+            android:text="Double" />
+
+        <Button
+            android:id="@+id/two_player_bluetooth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="11sp"
+            android:text="Double Bluetooth"
+            />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:gravity="center"
+        android:padding="16dp"
+        android:rowCount="3">
+
+        <!-- Button 0 -->
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="1dp"
+            android:backgroundTint="#FDE449"
+            android:tag="0"
+            android:text=" "
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <!-- Button 1 -->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="1dp"
+            android:backgroundTint="#FDE449"
+            android:tag="1"
+            android:text=" "
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <!-- Button 2 -->
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="1dp"
+            android:backgroundTint="#FDE449"
+            android:tag="2"
+            android:text=" "
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <!-- Button 3 -->
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="1dp"
+            android:backgroundTint="#FDE449"
+            android:tag="3"
+            android:text=" "
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <!-- Button 4 -->
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="1dp"
+            android:backgroundTint="#FDE449"
+            android:tag="4"
+            android:text=" "
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <!-- Button 5 -->
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="1dp"
+            android:backgroundTint="#FDE449"
+            android:tag="5"
+            android:text=" "
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <!-- Button 6 -->
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="1dp"
+            android:backgroundTint="#FDE449"
+            android:tag="6"
+            android:text=" "
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <!-- Button 7 -->
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="1dp"
+            android:backgroundTint="#FDE449"
+            android:tag="7"
+            android:text=" "
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <!-- Button 8 -->
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="1dp"
+            android:backgroundTint="#FDE449"
+            android:tag="8"
+            android:text=" "
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+    <!-- Reset Button placed below the grid -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="resetGame"
+        android:layout_gravity="center_horizontal"
+        android:text="Reset Game" />
+
+    <Button
+        android:id="@+id/hostButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Host Game"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/joinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join Game"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

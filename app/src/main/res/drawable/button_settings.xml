@@ -1,0 +1,5 @@
+<!-- res/drawable/button_shape.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/darker_gray" />
+    <corners android:radius="0dp" /> <!-- No curves -->
+</shape>

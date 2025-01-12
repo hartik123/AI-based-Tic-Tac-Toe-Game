@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_new_game"
+        android:title="Game"
+        android:icon="@drawable/icons8_new_50"/>
+    <item
+        android:id="@+id/nav_history"
+        android:title="History"
+        android:icon="@drawable/icons8_history_32"/>
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/icons8_settings_38"/>
+</menu>
