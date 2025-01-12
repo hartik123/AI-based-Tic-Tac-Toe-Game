@@ -1,9 +1,19 @@
 # CSE535: Project 2 
 
-TicTacToe Game Application: Group 16
+AI based TicTacToe Game Application: Group 16
 
 ## Overview
-This is a mobile game application developed as part of the CSE535 course. The app provides users with a fun and engaging way to play games, track their progress, and compete with friends.
+This mobile game application, developed for the CSE535 course, offers an engaging gaming experience with three modes, including AI play with varying difficulty levels, progress tracking, and friend competitions.
+
+## Demo
+[![Demo Video of the AI based Tic Tac Toe Game](https://img.youtube.com/vi/39cvCMhZ-JE/0.jpg)](https://www.youtube.com/watch?v=39cvCMhZ-JE)
+
+## MinMax Algorithm
+The core development of the game, specifically the gameplay, is implemented using the MinMax Algorithm with Alpha-Beta Pruning to optimize the AI's moves against the human player. Additionally, various difficulty modes are introduced:
+
+EASY: The AI selects positions entirely at random **(100% random)**.
+MEDIUM: The AI makes a **random move 50%** of the time, and for the other **50%, it selects moves based on the MinMax tree**.
+HARD: The AI always **(100% of the time) selects moves based on the MinMax tree**. In this case, the outcome can either be a tie or a loss for the human player.
 
 ## Features
 - User-friendly Interface: Intuitive design for easy navigation.
@@ -11,13 +21,76 @@ This is a mobile game application developed as part of the CSE535 course. The ap
 - History Tracking: View game history, including levels, winners, and dates.
 - Real-time Updates: Dynamic updating of game.
 - Responsive Design: Optimized for various screen sizes and orientations.
-- Multiplayer mode: 2 players can have on-device play and two-device play.
+- Singleplayer mode: Play against Artificial Intelligence(AI) with 3 choice of difficulty EASY, MEDIUM, or HARD.
+- Multiplayer mode: 2 players can have on-device play and two-device play over a BLUETOOTH.
+
+## Screens
+### 1. Game Screen - Gameplay
+- **Start a New Game**: The user always makes the first move and plays as Player X.
+- **AI Opponent**: The AI plays as Player O, with moves determined by the selected difficulty mode:
+  - Optimal moves are chosen using the Minimax algorithm with alpha-beta pruning.
+- **End Conditions**:
+  - Game ends when a player wins (row, column, diagonal) or if a draw occurs.
+  - An end-of-game message displays the result and congratulates the winner.
+- **Switch Difficulty Mode**: Users can change the difficulty mode at any time.
+- **Reset Game**: Users can reset the board to start a new game.
+
+### 2. Settings Screen - Difficulty Modes
+- **Easy**: The AI chooses random actions.
+- **Medium**: The AI chooses random actions 50% of the time and optimal actions 50% of the time.
+- **Hard**: The AI always chooses optimal actions.
+
+### 3. Past Games Screen
+- Displays a history of past games in the following format:
+
+```
+Date       | Winner   | Difficulty Mode
+2024-01-01 | Human    | Hard
+2024-01-02 | Computer | Medium
+2024-01-03 | Human    | Easy
+```
+
+## JSON based communincation for the Bluetooth Implementation
+
+```
+{
+  "gameState": {
+    "board": [
+      ["X", " ", " "],
+      [" ", " ", " "],
+      [" ", " ", " "]
+    ],
+    "turn": "1",
+    "winner": " ",
+    "draw": false,
+    "connectionEstablished": true,
+    "reset": false
+  },
+  "metadata": {
+    "choices": [
+      {
+        "id": "player1",
+        "name": "Player 1 MAC Address"
+      },
+      {
+        "id": "player2",
+        "name": "Player 2 MAC Address"
+      }
+    ],
+    "miniGame": {
+      "player1Choice": "Player 1 MAC Address",
+      "player2Choice": "Player 1 MAC Address"
+    }
+  }
+}
+```
+
 
 ## Technology Stack
 - Android Studio: Kotlin for development.
 - RecyclerView: For displaying game history in a list format.
-- XML: For layout design.
-- RoomDB: For data storage and management.
+- XML: For layout designs of the Game Screen, History SCreen, and Difficulty Mode Screen.
+- RoomDB: For data storage(Winner, Difficuty Mode, Date Played) and management.
 
 ## Installation
 Clone the repository:
@@ -44,4 +117,4 @@ We welcome contributions! Please follow these steps to contribute:
 - Open a Pull Request.
 
 ## Acknowledgments
-Special thanks to the CSE535 course instructor, TAs and peers for their support and collaboration.
+Special thanks to the CSE535 course instructor, Professor Jaejong Baek, TAs Taha Shaheen and Animesh Singh, and peers for their support and collaboration.
