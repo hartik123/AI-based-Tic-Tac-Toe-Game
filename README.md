@@ -5,9 +5,6 @@ AI based TicTacToe Game Application: Group 16
 ## Overview
 This mobile game application, developed for the CSE535 course, offers an engaging gaming experience with three modes, including AI play with varying difficulty levels, progress tracking, and friend competitions.
 
-## Demo
-[![Demo Video of the AI based Tic Tac Toe Game](https://img.youtube.com/vi/39cvCMhZ-JE/0.jpg)](https://www.youtube.com/watch?v=39cvCMhZ-JE)
-
 ## Mobile App Screens
 <p align="center">
 <kbd><img src="https://github.com/user-attachments/assets/6d73315b-cbc3-4af8-bb2e-4c255f444f92" width="200"></kbd> &nbsp;
@@ -20,7 +17,8 @@ This mobile game application, developed for the CSE535 course, offers an engagin
 <kbd><img src="https://github.com/user-attachments/assets/61fbe6ed-e912-46e0-a2fe-674ec3abe815" width="200"></kbd> &nbsp;
 </p>
 
-
+## Demo
+[![Demo Video of the AI based Tic Tac Toe Game](https://img.youtube.com/vi/39cvCMhZ-JE/0.jpg)](https://www.youtube.com/watch?v=39cvCMhZ-JE)
 
 
 
